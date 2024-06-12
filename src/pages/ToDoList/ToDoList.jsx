@@ -16,7 +16,7 @@ const ToDoList = () => {
       <TaskList />
       </div>
 
-      <img className='wave' src={process.env.PUBLIC_URL + 'assets/vector.svg'} alt='wave' />
+      <img className='wave' src={process.env.PUBLIC_URL + 'assets/Vector.svg'} alt='wave' />
     </div>
       </Fragment>
   );

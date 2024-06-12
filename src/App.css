@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.get-started{
+  background: linear-gradient(180deg, rgba(227,202,165,1) 0%, rgba(255,251,233,1) 100%);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.get-started h1{
+  text-align: center;
+  font-size: 36px;
   color: white;
+  padding: 30px 0;
+}
+.center_img{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.center_img img{
+  width: 400px;
+  margin: 40px 0;
+}
+.mx-15{
+  margin: 0 15px;
+}
+.my-15{
+  margin: 15px 0;
+}
+.getStartBtn{
+  color: white;
+  background-color: #E3CAA5;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 100%;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.getStartBtn a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+.text h2{
+font-size: 24px;
+font-weight: 600;
+color: #888681;
+text-align: center;
+padding: 25px 0 0 0;
+}
+.text p {
+  color: #888681;
+  text-align: center;
+  padding: 10px 15px 15px 15px;
+}
+.header{
+  background-color: #E5CDA9;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
+}
+.hero{
+  background-color: #FAF3DE;
+  padding: 25px 15px;
+  margin: 50px 15px;
+  border-radius: 10px;
+}
+.masterClass{
+position: relative;
+}
+.masterClass .arrow{
+  position: absolute;
+  left: 28%;
+  bottom: 0;
+}
+.masterClass .notes{
+  position: absolute;
+  right: 0%;
+  bottom: -10%;
+}
+.hero h2{
+  color: #E3CAA5;
+  font-size: 18px;
+  font-weight: 500;
+}
+.input-container{
+  width: calc(100% - 30px); 
+    margin: 0 15px;
+}
+.task-input input{
+  padding: 10px;
+  font-size: 18px;
+  display: block;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #D0D5DD;
+}
+.task-item{
+  background-color: #FAF3DE;
+  padding: 10px;
+  margin: 14px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+.task-item input{
+  height: 35px;
+  accent-color: #FAF3DE;
+  background-color: #FAF3DE;
+  width: 35px;
+  border:  #888681;
+  color:#E3CAA5;
+}
+.delete_ic{
+  cursor: pointer;
+}
+.wave{
+  position: fixed;
+  bottom: 0;
+  z-index: -99;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:600px) {
+  .masterClass .notes{
+    position: absolute;
+    right: -8%;
+    bottom: -10%;
   }
-  to {
-    transform: rotate(360deg);
+  .center_img img{
+    width: 100%;
   }
 }

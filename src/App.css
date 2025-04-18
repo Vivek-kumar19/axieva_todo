@@ -9,6 +9,11 @@ body{
   font-weight: 400;
   font-style: normal;
 }
+.to-do-list{
+ display: flex;
+align-items: center;
+justify-content: center;
+}
 .get-started{
   background: linear-gradient(180deg, rgba(227,202,165,1) 0%, rgba(255,251,233,1) 100%);
   min-height: 100vh;
@@ -137,7 +142,9 @@ position: relative;
   z-index: -99;
   width: 100%;
 }
-
+.container{
+max-width:600px;
+}
 @media (max-width:600px) {
   .masterClass .notes{
     position: absolute;
